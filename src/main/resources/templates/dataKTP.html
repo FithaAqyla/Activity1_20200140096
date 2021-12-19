@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Halaman Baru</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div>Daftar Data KTP</div>
+        <hr>
+        <br>
+        <table border="2">
+            <th>No.</th>
+            <th>No ID</th>
+            <th>Nomor KTP</th>
+            <th>Nama</th>
+            <th>Alamat</th>
+            <tbody th:each="dataktp,count:${ktp}">
+               <tr>
+                   <td th:text="${count.index+1}">
+                    <td th:text="${dataktp [0]}"></td>
+                    <td th:text="${dataktp [1]}"></td>
+                    <td th:text="${dataktp [2]}"></td>
+                    <td th:text="${dataktp [3]}"></td>
+                </tr>
+            </tbody>
+        </table>
+
+    </body>
+</html>
