@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div>TOTAL DISKON</div>
+      <hr>
+        <br>
+        <table border="2">
+            <th>Nama Sayur</th>
+            <th>Harga Perkilo</th>
+            <th>Jumlah Sayur</th>
+            <th>Total</th>
+            <th>Discount</th>
+            <th>Harga Akhir</th>
+            <tbody th:each="datasayur,count:${nama}">
+               <tr>
+                   <td th:text="${count.index+1}">
+                    <td th:text="${datasayur [0]}"></td>
+                    <td th:text="${datasayur [1]}"></td>
+                    <td th:text="${datasayur [2]}"></td>
+                    <td th:text="${datasayur [3]}"></td>
+                    <td th:text="${datasayur [4]}"></td>
+                    <td th:text="${datasayur [5]}"></td>
+                </tr>
+            </tbody>
+        </table>
+
+    </body>
+</html> 
+    </body>
+</html>
