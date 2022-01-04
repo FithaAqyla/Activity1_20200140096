@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div>TOTAL DISKON</div>
+      <hr>
+        <br>
+        <table border="2">
+            <th>Nama Sayur</th>
+            <th>Harga Perkilo</th>
+            <th>Jumlah Sayur</th>
+            <th>Total</th>
+            <th>Discount</th>
+            <th>Harga Akhir</th>
+            <tbody th:each="datasayur,count:${nama}">
+               <tr>
+                    <td th:text="${datasayur [0]}"></td>
+                    
+                </tr>
+            </tbody>
+            <tbody th:each="datasayur,count:${harga}">
+               <tr>
+                    <td th:text="${datasayur [0]}"></td>
+                    
+                </tr>
+            </tbody>
+            <tbody th:each="datasayur,count:${jumlah}">
+               <tr>
+                    <td th:text="${datasayur [0]}"></td>
+                    
+                </tr>
+            </tbody>
+            <tbody th:each="datasayur,count:${hargaawal}">
+               <tr>
+                    <td th:text="${datasayur [0]}"></td>
+                    
+                </tr>
+            </tbody>
+            <tbody th:each="datasayur,count:${hitungdiskon}">
+               <tr>
+                    <td th:text="${datasayur [0]}"></td>
+                    
+                </tr>
+            </tbody>
+            <tbody th:each="datasayur,count:${diskon}">
+               <tr>
+                    <td th:text="${datasayur [0]}"></td>
+                    
+                </tr>
+            </tbody>
+            <tbody th:each="datasayur,count:${hargaakhir}">
+               <tr>
+                    <td th:text="${datasayur [0]}"></td>
+                    
+                </tr>
+            </tbody>
+            
+            
+        </table>
+
+    </body>
+</html> 
+    </body>
+</html>
