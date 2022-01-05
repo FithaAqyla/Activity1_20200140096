@@ -1,1 +1,0 @@
-typeSearchIndex = [{"l":"All Classes","url":"allclasses-index.html"},{"p":"ti.umy.praktikum.berat","l":"Application"},{"p":"ti.umy.praktikum.berat","l":"konversiController"}]
